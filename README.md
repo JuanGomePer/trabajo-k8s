@@ -33,37 +33,4 @@ Estructural
 Permite desacoplar la abstracción (`AppNotification`) de su implementación (`Platform`), facilitando la combinación flexible de tipos de notificación y plataformas.
 
 ### Diagrama de clases
-PlantUML:
-```plantuml
-@startuml
-title Diagrama de clases - Patrón Bridge (Notificaciones)
-
-interface Platform {
-  +display(title: String, message: String)
-}
-
-class WebPlatform
-class MobilePlatform
-class DesktopPlatform
-
-abstract class AppNotification {
-  -platform: Platform
-  +setPlatform(platform: Platform)
-  +send(title: String, message: String)
-}
-
-class MessageNotification
-class AlertNotification
-class WarningNotification
-class ConfirmationNotification
-
-Platform <|.. WebPlatform
-Platform <|.. MobilePlatform
-Platform <|.. DesktopPlatform
-
-AppNotification o--> Platform
-AppNotification <|-- MessageNotification
-AppNotification <|-- AlertNotification
-AppNotification <|-- WarningNotification
-AppNotification <|-- ConfirmationNotification
-@enduml
+<img width="1259" height="436" alt="image" src="https://github.com/user-attachments/assets/42120ae7-fc99-4fb0-abbe-335eebd6f16b" />
