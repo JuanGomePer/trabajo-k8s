@@ -1,0 +1,39 @@
+# Dependencias
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Salida de compilación
+dist/
+build/
+out/
+
+# Archivos de TypeScript
+*.tsbuildinfo
+
+# Archivos temporales de npm / logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDE/Editor
+.vscode/
+.idea/
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.tgz
+
+# Otros
+.env
+.env.local
+.env.*.local
