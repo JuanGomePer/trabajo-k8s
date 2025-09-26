@@ -1,0 +1,32 @@
+@startuml
+title Diagrama de clases - Patrón Bridge (Notificaciones)
+
+interface Platform {
+    +display(title: String, message: String)
+}
+
+class WebPlatform
+class MobilePlatform
+class DesktopPlatform
+
+abstract class AppNotification {
+    -platform: Platform
+    +setPlatform(platform: Platform)
+    +send(title: String, message: String)
+}
+
+class MessageNotification
+class AlertNotification
+class WarningNotification
+class ConfirmationNotification
+
+Platform <|.. WebPlatform
+Platform <|.. MobilePlatform
+Platform <|.. DesktopPlatform
+
+AppNotification o--> Platform
+AppNotification <|-- MessageNotification
+AppNotification <|-- AlertNotification
+AppNotification <|-- WarningNotification
+AppNotification <|-- ConfirmationNotification
+@enduml
