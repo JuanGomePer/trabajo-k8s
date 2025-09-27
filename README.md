@@ -41,13 +41,14 @@ npm run start3
 
 ## Ejercicio 1
 > *(Espacio reservado para el primer ejercicio)*  
-- **Tipo de patrón:**  
-- **Patrón aplicado:**  
+- **Tipo de patrón:**  Patron de contrucción
+- **Patrón aplicado:**  Builder
 - **Diagrama de clases:**  
 
-**FOTO UML EJERCICIO 1**
+<img width="585" height="739" alt="image" src="https://github.com/user-attachments/assets/0d1e1a27-518a-4bfd-873a-a3f90258ed55" />
 
-- **Notas de implementación:**  
+
+- **Notas de implementación:**  Empleamos un patrón creacional, específicamente el Builder, porque el problema consiste en construir un objeto Automóvil con múltiples configuraciones posibles sin caer en los inconvenientes de los constructores telescópicos o sobrecargados, que reducen la claridad y dificultan el mantenimiento. El patrón Builder permite crear el objeto paso a paso de forma legible, asignando solo los atributos necesarios mientras el resto mantiene valores por defecto. Esta solución, garantiza la inmutabilidad del objeto final, ya que una vez creado el automóvil sus propiedades no pueden modificarse, a la vez que aporta flexibilidad, pues se pueden omitir parámetros opcionales sin necesidad de definir múltiples constructores. Finalmente, este patrón promueve la separación de responsabilidades, ya que la clase Car representa únicamente el producto terminado mientras que la lógica de construcción se concentra en CarBuilder, la unica clase que se peude modificar, es la clase CarBuilder, facilitando futuras modificaciones y mejorando la mantenibilidad del código.
 - Pendiente
 
 ---
