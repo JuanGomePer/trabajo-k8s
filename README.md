@@ -71,7 +71,7 @@ Permite desacoplar la abstracción (`AppNotification`) de su implementación (`P
 Aplicación de chat grupal que permite crear, eliminar y listar usuarios, y enviar mensajes entre ellos mediante un **Mediator**, centralizando la comunicación para evitar dependencias directas. Esto facilita el mantenimiento y escalabilidad, reduce la complejidad de las interacciones y mantiene la lógica de comunicación organizada.
 
 ### Tipo de patrón
-Patron de comportamiento: Debido a que gestiona cómo los objetos interactúan y se comunican entre sí sin que haya acoplamiento fuerte.
+**Comportamiento**: Debido a que gestiona cómo los objetos interactúan y se comunican entre sí sin que haya acoplamiento fuerte.
 ### Patrón aplicado
 **Mediator**  
 Permite centralizar la comunicación en un único objeto y hace que los usuarios no necesitan conocer a todos los demás, solo al mediador.
