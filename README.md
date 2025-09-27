@@ -13,11 +13,13 @@ Este proyecto utiliza **TypeScript** y **ts-node** para ejecutar los archivos `.
 
 ## Requisitos
 
-- Tener instalado **Node.js** (v14 o superior recomendado).  
-- Tener instalado **TypeScript** y **ts-node** globalmente:
+- Tener instalado **Node.js** (v14 o superior recomendado).
+
+  
+Luego, en la carpeta del proyecto, instalar las dependencias:
 
 ```bash
-npm install -g typescript ts-node
+npm install
 
 ```
 
