@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start2": "ts-node ejercicio2.ts",
+    "start3": "ts-node ejercicio3.ts",
     "start:fast": "ts-node --transpile-only index.ts",
     "build": "tsc && node dist/index.js"
   },
