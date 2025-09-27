@@ -66,7 +66,7 @@ Permite desacoplar la abstracción (`AppNotification`) de su implementación (`P
 
 ---
 
-## Ejercicio 3
+## Ejercicio 3 - Chat Grupal
 ### Descripción
 Aplicación de chat grupal que permite crear, eliminar y listar usuarios, y enviar mensajes entre ellos mediante un **Mediator**, centralizando la comunicación para evitar dependencias directas. Esto facilita el mantenimiento y escalabilidad, reduce la complejidad de las interacciones y mantiene la lógica de comunicación organizada.
 
