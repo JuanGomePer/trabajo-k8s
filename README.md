@@ -82,7 +82,4 @@ Permite centralizar la comunicación en un único objeto y hace que los usuarios
 
 
 
-- **Notas de implementación:**  
-- Pendiente
-
 ---
